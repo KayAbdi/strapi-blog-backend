@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_layout_newsletter_forms",
+  "info": {
+    "displayName": "newsletterForm",
+    "icon": "mail-bulk"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "sunHeading": {
+      "type": "text"
+    }
+  }
+}
