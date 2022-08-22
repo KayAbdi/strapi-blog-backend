@@ -6,7 +6,7 @@
 
 module.exports = (policyContext, config, { strapi }) => {
     // Add your own logic here.
-    console.log(strapi);
+    // console.log(strapi);
     const { userRole } = config;
     const isEligibale = policyContext.state.user && policyContext.state.user.role.code == userRole;  // Administrator
 
