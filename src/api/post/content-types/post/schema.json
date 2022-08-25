@@ -51,6 +51,18 @@
       "type": "component",
       "repeatable": false,
       "component": "seo.seo-information"
+    },
+    "premium": {
+      "type": "boolean",
+      "default": false,
+      "required": true,
+      "private": true
+    },
+    "likedBy": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "likes"
     }
   }
 }

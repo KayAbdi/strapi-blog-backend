@@ -1,19 +1,17 @@
-'use strict';
+"use strict";
 
 /**
  * `check-role` policy.
  */
 
 module.exports = (policyContext, config, { strapi }) => {
-    // Add your own logic here.
-    // console.log(strapi);
-    const { userRole } = config;
-    const isEligibale = policyContext.state.user && policyContext.state.user.role.code == userRole;  // Administrator
+  const { userRole } = config;
+  const isEligible =
+    policyContext.state.user && policyContext.state.user.role.code == userRole;
 
+  if (isEligible) {
+    return true;
+  }
 
-    if (isEligibale) {
-      return true;
-    }
-
-    return false;
+  return false;
 };
