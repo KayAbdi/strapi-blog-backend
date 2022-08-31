@@ -1,0 +1,28 @@
+{
+  "name": "github-projects",
+  "version": "0.0.0",
+  "description": "This is the description of the plugin.",
+  "strapi": {
+    "name": "GitHub Projects",
+    "description": "A strapi plugin that allows to generate projects from github repos",
+    "kind": "plugin",
+    "displayName": "Github Projects"
+  },
+  "dependencies": {
+    "@octokit/request": "^6.2.1",
+    "axios": "^0.27.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "maintainers": [
+    {
+      "name": "A Strapi developer"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
